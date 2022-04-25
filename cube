@@ -1,0 +1,24 @@
+f2l :-
+
+
+oll :-
+
+sune		: R U R' U R U2 R'		: (right) 
+antisune	: L' U' L U' L' U2 L		: (left)
+H		: F(R U R' U')3 F'		: (none, opp sameL)
+Pi 		: R U2 (R2 U' R2 U' R2) U2 R	: (none, opp diff)
+L 		: x (R' U R D') (R' U' R D)	: (2 corners not solved, diag)
+T 		: x(L U R' U') (L' U R U')	: (2 corners not solved, same, opp facing) #big block right
+U		: R2 D(R' U2 R) D' (R' UR R')	: (2 corners not solved, same, facing us) #unsolved facing us
+
+
+pll :-
+
+all different = Diagonal swap 
+Diagonal swap		: (F R U' R' U' R U R' F') (R U R' U' R' F R F')
+Adjacent corner swap 	: (R U R' U' R' F R F') (F R U' R' U' R U R' F')  #solved left
+
+3-Edge cycle(right)	: R U' R U R U R U' R' U' R2
+3-Edge cycle(left)	: L' U L' U' L' U' L' U L U L2
+opposite edge swap	: M2 U' M2 U2 M2 U' M2 
+adjacent edge swap	: M' U' M2 U' M2 U' M' U2 M2 
