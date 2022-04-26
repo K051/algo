@@ -9,7 +9,7 @@ H		: F(R U R' U')3 F'		: (none, opp sameL)
 Pi 		: R U2 (R2 U' R2 U' R2) U2 R	: (none, opp diff)
 L 		: x (R' U R D') (R' U' R D)	: (2 corners not solved, diag)
 T 		: x(L U R' U') (L' U R U')	: (2 corners not solved, same, opp facing) #big block right
-U		: R2 D(R' U2 R) D' (R' UR R')	: (2 corners not solved, same, facing us) #unsolved facing us
+U		: R2 D(R' U2 R) D' (R' U2 R')	: (2 corners not solved, same, facing us) #unsolved facing us
 
 
 pll :-
